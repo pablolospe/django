@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.log
+*.pot
+*.pyc
+*.env
+.db
+.db.*
+.mypy_cache/
+.venv/
+*.sqlite3
+*.sqlite3-journal
