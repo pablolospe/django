@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CryptoPlus</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/images/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div id="nav">
+                <a href="../index.html">Criptomonedas</a>
+                <a href="pricesHistoric.html">Historico</a>
+                <a href="yield.html">Calculadora Rendimientos</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </div>
+
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <img class="icon" height="20" src="../assets/svg/bars-solid.svg" alt="asd">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <p class="p-form">Por favor, completa el formulario siguiente para ponerte en contacto con nosotros</p>
+            <br>
+            <form id="form" action="https://formspree.io/f/mzboozkl" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+
+                <div id="submitWarning">
+                    <input type="submit" value="Enviar">
+                    <p class="warnings" id="warnings"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <div class="footer-links">
+                    <h4>Mapa del Sitio</h4>
+                    <ul>
+                        <li><a href="../index.html">Criptomonedas</a></li>
+                        <li><a href="./pricesHistoric.html">Histórico</a></li>
+                        <li><a href="./yield.html">Calculadora de Rendimiento</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item"></div>
+            <div class="footer-item">
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/ligarcia7/CryptoPlus" target="_blank">
+                                    <img src="../assets/svg/github.svg" alt="github icon" height="20">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com" target="_blank">
+                                    <img src="../assets/svg/linkedin.svg" alt="github icon" height="20">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/form.js"></script>
+    <script src="../assets/js/responsive.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historico - CryptoPlus</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/images/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div id="nav">
+                <a href="../index.html">Criptomonedas</a>
+                <a href="pricesHistoric.html" class="active">Historico</a>
+                <a href="yield.html">Calculadora Rendimientos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <img class="icon" height="20" src="../assets/svg/bars-solid.svg" alt="asd">
+            </div>
+        </div>
+    </header>
+
+    <div class="historic-container">
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_e4cd5"></div>
+            <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow"
+                    target="_blank"></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                    {
+                        "autosize": true,
+                        "symbol": "BINANCE:BTCUSD",
+                        "interval": "W",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "2",
+                        "locale": "es",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "save_image": false,
+                        "container_id": "tradingview_e4cd5"
+                    }
+                );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <div class="footer-links">
+                    <h4>Mapa del Sitio</h4>
+                    <ul>
+                        <li><a href="../index.html">Criptomonedas</a></li>
+                        <li><a href="./pricesHistoric.html">Histórico</a></li>
+                        <li><a href="./yield.html">Calculadora de Rendimiento</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item"></div>
+            <div class="footer-item">
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/ligarcia7/CryptoPlus" target="_blank">
+                                    <img src="../assets/svg/github.svg" alt="github icon" height="20">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com" target="_blank">
+                                    <img src="../assets/svg/linkedin.svg" alt="github icon" height="20">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/responsive.js"></script>
+</body>
+
+</html>

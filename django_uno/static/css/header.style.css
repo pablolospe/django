@@ -1,0 +1,68 @@
+
+.topnav {
+    background-color: #5cbdb9;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #5cbdb9;
+  }
+
+  .topnav a:hover {
+    background-color: #ebf6f5;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width:760px) {
+
+    .topnav {
+      margin: 0;
+      padding: 0;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+
+    /* UBICACION DEL MENÚ HAMBURGUESA */
+    .topnav .icon {
+      display: flex;
+      margin-right: 1rem;
+      margin-top: 0;
+    }
+
+    #nav {
+      display: none;
+    }
+
+    #nav.responsive{
+        z-index: 99;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        /* width: fit-content; */
+        position: absolute;
+        top: 50px;
+    }
+  }
+
+
+
+
