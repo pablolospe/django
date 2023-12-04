@@ -1,0 +1,16 @@
+{% extends 'index.html' %} {% load static %} {% block content %}
+
+<main>
+    <div  >
+        <h1>Estas seguro ue deseas borrar este usuario?</h1>
+        <h2>{{user.name}}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <input type="submit" value="{{ tipo }}" />
+        </form>
+
+        <a href="{% url 'users:all' %}">Cancelar</a>
+    </div>
+</main>
+{% endblock %}

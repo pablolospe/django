@@ -28,18 +28,21 @@ class UsersDetailView(UserBaseView,DetailView):
 class UsersCreateView(UserBaseView,CreateView):
     template_name = "user_create.html"
     extra_context = {
-        "tipo": "Crear user"
+        "tipo": "Crear user",
+        "hide_main": True
     }
 
 class UsersUpdateView(UserBaseView,UpdateView):
-    template_name = "user_update.html"
+    template_name = "user_create.html"
     extra_context = {
+        "hide_main": True,
         "tipo": "Actualizar user"
     }
 
 class UsersDeleteView(UserBaseView,DeleteView):
     template_name = "user_delete.html"
     extra_context = {
+        "hide_main": True,
         "tipo": "Borrar user"
     }
 

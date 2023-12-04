@@ -18,11 +18,11 @@
     <header>
         <div class="topnav" id="myTopnav">
             <div id="nav">
-                <a href="{{ request.path }}" class="active">Criptomonedas</a>
+                <a href="{% url 'index' %}" class="active">Criptomonedas</a>
                 <a href="{% url 'pricesHistoric' %}">Historico</a>
                 <a href="{% url 'yield' %}">Calculadora Rendimientos</a>
                 <a href="{% url 'contacto' %}">Contacto</a>
-                <a href="{% url 'users:all' %}">USER</a>
+                <a href="{% url 'users:all' %}">Usuarios</a>
             </div>
 
 
@@ -37,9 +37,9 @@
     
     {% if not hide_main %}
     <main id="main">
-        <!-- Contenido principal aquí -->
     </main>
     {% endif %}
+
     <footer>
         <div class="footer-container">
             <div class="footer-item">

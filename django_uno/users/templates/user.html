@@ -3,17 +3,36 @@
 {% block content %}
 
 
-    <div>
-        <h1 style="color: white;">Usuarios</h1>
-        <h1 style="color: white;"><a href="{% url 'users:create' %}">Ingresar nuevo usuario </a></h1>
-        <ul>
-            {% for u in user_list %}
-            <li>{{u.name}} {{u.lastname}}</li>
-            <li>email: {{u.email}} </li>
-            <hr/>
-            {% endfor %}
-        </ul>
-    </div>
+<div>
+    <br>
+    <h1 style="color: rgb(123, 210, 213);">Todos los usuarios</h1>
+    <h2><a style="color: cadetblue;" href="{% url 'users:create' %}">+ Ingresar nuevo usuario </a></h2>
+    <hr />
+    <ul>
+        {% for user in user_list %}
+        <li>
+            <span>{{user.name}} {{user.lastname}}</span>
+            <span>(id: {{user.id}}) </span>
+        </li>
+        <li>email: {{user.email}} </li>
+
+        <a href="{% url 'users:delete' user.id %}">
+            <button style="background-color: brown;">
+                Borrar
+            </button>
+        </a>
+
+        <a href="{% url 'users:update' user.id %}">
+            <button>
+                Editar
+            </button>
+        </a>
+        <hr />
+
+        {% endfor %}
+
+    </ul>
+</div>
 
 
 
