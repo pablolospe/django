@@ -49,7 +49,18 @@ def user_detail(request, pk):
     except:
         # respond with a 404 error message
         return HttpResponse(status=404)  
-    if(request.method == 'PUT'):
+    if(request.method == 'GET'):
+        # parse the incoming information
+        data = JSONParser().parse(request)  
+        # instanciate with the serializer
+        serializer = UserSerializer(user, data=data)
+        # check whether the sent information is okay
+        if(serializer.is_valid()):  
+            # provide a JSON response with the data that was submitted
+            return JsonResponse(serializer.data, status=201)
+        # provide a JSON response with the necessary error information
+        return JsonResponse(serializer.errors, status=400)
+    elif(request.method == 'PUT'):
         # parse the incoming information
         data = JSONParser().parse(request)  
         # instanciate with the serializer
