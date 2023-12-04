@@ -18,31 +18,40 @@
     <header>
         <div class="topnav" id="myTopnav">
             <div id="nav">
-                <a href="index.html" class="active">Criptomonedas</a>
-                <a href="./pricesHistoric.html">Historico</a>
-                <a href="./yield.html">Calculadora Rendimientos</a>
-                <a href="./contacto.html">Contacto</a>
+                <a href="{{ request.path }}" class="active">Criptomonedas</a>
+                <a href="{% url 'pricesHistoric' %}">Historico</a>
+                <a href="{% url 'yield' %}">Calculadora Rendimientos</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+                <a href="{% url 'users:all' %}">USER</a>
             </div>
 
+
+            
             <div onclick="responsiveMenu()">
                 <img class="icon" height="20" src="{% static './svg/bars-solid.svg'%}" alt="asd">
             </div>
         </div>
     </header>
+
+    {% block content %}{% endblock %}
+    
+    {% if not hide_main %}
     <main id="main">
-
+        <!-- Contenido principal aquí -->
     </main>
-
+    {% endif %}
     <footer>
         <div class="footer-container">
             <div class="footer-item">
                 <div class="footer-links">
                     <h4>Mapa del Sitio</h4>
                     <ul>
-                        <li><a href="./index.html">Criptomonedas</a></li>
-                        <li><a href="./pricesHistoric.html">Histórico</a></li>
-                        <li><a href="./yield.html">Calculadora de Rendimiento</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+
+                        <li><a href="{{ request.path }}" class="active">Criptomonedas</a></li>
+                        <li><a href="{% url 'pricesHistoric' %}">Histórico</a></li>
+                        <li><a href="{% url 'yield' %}">Calculadora de Rendimiento</a></li>
+                        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+
                     </ul>
                 </div>
             </div>
