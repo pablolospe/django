@@ -1,0 +1,50 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Employee",
+            "database": "employeemanager",
+            "username": "admin",
+            "password": "admin"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Peliculas",
+            "database": "peliculas",
+            "username": "admin"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "cryptoplus",
+            "database": "${workspaceFolder:django}/31/db.sqlite3"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "cryptoplusDjangoUno",
+            "database": "${workspaceFolder:django}/django_uno/db.sqlite3"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "django_api_users",
+            "database": "${workspaceFolder:django}/django_api/django_api_users/db.sqlite3"
+        }
+    ]
+}
