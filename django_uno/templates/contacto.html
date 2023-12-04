@@ -16,10 +16,10 @@
     <header>
         <div class="topnav" id="myTopnav">
             <div id="nav">
-                <a href="../">Criptomonedas</a>
-                <a href="../pricesHistoric.html">Historico</a>
-                <a href="../yield.html">Calculadora Rendimientos</a>
-                <a href="../contacto.html" class="active">Contacto</a>
+                <a href="{% url 'index' %}">Criptomonedas</a>
+                <a href="{% url 'pricesHistoric' %}" >Historico</a>
+                <a href="{% url 'yield' %}" >Calculadora Rendimientos</a>
+                <a href="{% url 'contacto' %}" class="active">Contacto</a>
             </div>
 
             <div id="icono-nav" onclick="responsiveMenu()">

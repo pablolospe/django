@@ -1,0 +1,16 @@
+{% extends 'user.html' %}
+{% block content %}
+
+<main>
+    <div >
+        <h1>CREAR VINO</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div>{{form.as_div}}</div>
+            <input type="submit" value="{{ tipo }}" />
+        </form>
+
+        <a href="{% url 'users:all' %}">Volvamos al Inicio</a>
+    </div>
+</main>
+{% endblock %}
