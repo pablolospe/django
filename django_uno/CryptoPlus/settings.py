@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = "django-insecure-wbp1jgvrer&unk(zat$*&j6i&n8diyg#ujjnq@5i5nzlhxy*sr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com']
+ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com', '127.0.0.1']
 
 
 CUSTOM_APPS = [
@@ -87,9 +88,16 @@ WSGI_APPLICATION = "CryptoPlus.wsgi.application"
 #     }
 # }
 
-
-DATABASES = {
-'default': {
+if os.environ.get('DEVELOPMENT'):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+else:  
+    DATABASES = {
+        'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'ligarcia7$db',
             'USER': 'ligarcia7',
@@ -97,8 +105,7 @@ DATABASES = {
             'HOST': 'ligarcia7.mysql.pythonanywhere-services.com',
             'PORT': '3306',
         }
-}
-
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
