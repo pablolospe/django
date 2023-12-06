@@ -2,13 +2,56 @@
 {% load static %}
 {% block content %}
 
+<main>
+    <div>
+        <br>
+        <h1 style="color: rgb(141, 242, 245);">Todos los usuarios</h1>
+        <h1>
+            <button>
+                <a href="{% url 'users:create' %}">+ Ingresar nuevo usuario </a>
+            </button>
+        </h1>
 
-<div>
-    <br>
-    <h1 style="color: rgb(123, 210, 213);">Todos los usuarios</h1>
-    <h2><a style="color: cadetblue;" href="{% url 'users:create' %}">+ Ingresar nuevo usuario </a></h2>
-    <hr />
-    <ul>
+        <br>
+
+        <div
+            style="width: 600px; height: 250px; overflow: auto; color: white-space; background-color: rgba(0,0,0,0.6); border: 1px solid rgb(141, 242, 245); border-radius: 1rem; padding: 0 1rem;">
+            <table>
+                <thead
+                    style="border: 1px solid rgb(141, 242, 245); position: sticky; top: 0; background-color: rgba(0,0,0,0.9); height: 50px;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Borrar</th>
+                        <th>Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in user_list %}
+                    <tr>
+                        <!-- Nota: he añadido estilos inline a cada celda de la tabla (td) -->
+                        <td style="border: 1px solid rgb(141, 242, 245); padding: 10px;">{{user.id}}</td>
+                        <td style="border: 1px solid rgb(141, 242, 245); padding: 10px;">{{user.name}} {{user.lastname}}
+                        </td>
+                        <td style="border: 1px solid rgb(141, 242, 245); padding: 10px;">{{user.email}}</td>
+                        <td style="border: 1px solid rgb(141, 242, 245); padding: 10px;">
+                            <a href="{% url 'users:delete' user.id %}">
+                                <button style="background-color: brown;">Borrar</button>
+                            </a>
+                        </td>
+                        <td style="border: 1px solid rgb(141, 242, 245); padding: 10px;">
+                            <a href="{% url 'users:update' user.id %}">
+                                <button>Editar</button>
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- <ul>
         {% for user in user_list %}
         <li>
             <span>{{user.name}} {{user.lastname}}</span>
@@ -31,9 +74,8 @@
 
         {% endfor %}
 
-    </ul>
-</div>
-
-
+    </ul> -->
+    </div>
+</main>
 
 {% endblock %}

@@ -11,7 +11,7 @@
         <form method="post">
             {% csrf_token %}
             <div>{{form.as_p}}</div>
-            <input type="submit" value="{{ tipo }}" />
+            <input style="background-color:brown;" type="submit" value="{{ tipo }}" />
         </form>
         <br>
         <a href="{% url 'users:all' %}">
