@@ -46,6 +46,23 @@ main {
     /* padding: 1rem; */
     }
 
+
+.red {
+  background-color: brown;
+  color: #fff;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.red:hover{
+  background-color: red;
+}
+
 .tradingview-widget-container iframe {
   min-height: 50vh;
 }
