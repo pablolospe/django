@@ -82,12 +82,14 @@ const mostrarData= (data)=>{
         const img = diccionario.find(entry => entry.symbol === filtro[i].symbol).img;
         const link = diccionario.find(entry => entry.symbol === filtro[i].symbol).link;
 
-        symbol =`<div id="ETHUSDT" class="price-container">
-        <a href=${link} target="_blank">
+        symbol =`<a href=${link} target="_blank">
+        <div>
+        <div  class="price-container">
         <img class="coin-logo" src=${img} alt="coin-logo"/>
-        </a>
         <div class="row">
-        <h3>${filtro[i].symbol}</h3><p>Price:</p> <p> ${parseFloat(filtro[i].price).toFixed(2)}</p></div></div>`
+        <h3>${filtro[i].symbol}</h3><p>Price:</p> <p> ${parseFloat(filtro[i].price).toFixed(2)}</p></div></div>
+        </div>
+        </a>`
 
         document.getElementById('main').innerHTML += symbol
     }
