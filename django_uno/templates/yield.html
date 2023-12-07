@@ -17,7 +17,7 @@
         <div class="topnav" id="myTopnav">
             <div id="nav">
                 <a href="{% url 'index' %}">Criptomonedas</a>
-                <a href="{% url 'pricesHistoric' %}" >Historico</a>
+                <a href="{% url 'pricesHistoric' %}">Historico</a>
                 <a href="{% url 'yield' %}" class="active">Calculadora Rendimientos</a>
                 <a href="{% url 'contacto' %}">Contacto</a>
                 <a href="{% url 'users:all' %}">Usuarios</a>
@@ -31,11 +31,14 @@
 
     <main>
 
-        <div class="yield-calculator">
+        <div class="yield-calculator" style="margin: 1rem;">
             <label>Rendimiento Porcentual:</label>
+
             <input type="number" id="precioCompra" name="precioCompra" placeholder="Precio de Compra" required>
             <input type="number" id="precioVenta" name="precioVenta" placeholder="Precio de Venta" required>
-            <button id="botonRendimiento%" onclick="percentageYield()"> Calcular </button>
+            <div>
+                <button id="botonRendimiento%" onclick="percentageYield()"> Calcular </button>
+            </div>
             <label id="resultadoRendimiento"></label>
         </div>
 

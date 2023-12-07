@@ -51,6 +51,7 @@ main {
 }
 
 .price-container {
+    color: #5cbdb9;
     display: flex;
     flex-direction: row;
     /* gap: 1rem; */
@@ -87,7 +88,7 @@ main {
 
 /* Scale up the box */
 .price-container:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.05);
   }
 
   /* Fade in the pseudo-element with the bigger shadow */
