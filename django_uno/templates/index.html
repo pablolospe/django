@@ -18,11 +18,11 @@
     <header>
         <div class="topnav" id="myTopnav">
             <div id="nav">
-                <a href="{% url 'index' %}" class="active">Criptomonedas</a>
-                <a href="{% url 'pricesHistoric' %}">Historico</a>
-                <a href="{% url 'yield' %}">Calculadora Rendimientos</a>
-                <a href="{% url 'contacto' %}">Contacto</a>
-                <a href="{% url 'users:all' %}">Usuarios</a>
+                <a href="{% url 'index' %}" {% if request.resolver_match.url_name == 'index' %}class="active"{% endif %}>Criptomonedas</a>
+                <a href="{% url 'pricesHistoric' %}" {% if request.resolver_match.url_name == 'pricesHistoric' %}class="active"{% endif %}>Historico</a>
+                <a href="{% url 'yield' %}" {% if request.resolver_match.url_name == 'yield' %}class="active"{% endif %}>Calculadora Rendimientos</a>
+                <a href="{% url 'contacto' %}" {% if request.resolver_match.url_name == 'contacto' %}class="active"{% endif %}>Contacto</a>
+                <a href="{% url 'users:all' %}" {% if request.resolver_match.url_name != 'index' %}class="active"{% endif %}>Usuarios</a>
             </div>
 
 
@@ -47,7 +47,7 @@
                     <h4>Mapa del Sitio</h4>
                     <ul>
 
-                        <li><a href="{{ request.path }}" class="active">Criptomonedas</a></li>
+                        <li><a href="{% url 'index' %}">Criptomonedas</a></li>
                         <li><a href="{% url 'pricesHistoric' %}">Histórico</a></li>
                         <li><a href="{% url 'yield' %}">Calculadora de Rendimiento</a></li>
                         <li><a href="{% url 'contacto' %}">Contacto</a></li>
