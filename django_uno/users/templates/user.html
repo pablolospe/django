@@ -4,17 +4,18 @@
 
 <main>
     <div>
-        <br>
-        <h1 style="color: rgb(141, 242, 245);">Todos los usuarios</h1>
+        <!-- <br> -->
+        <!-- <h1 style="color: rgb(141, 242, 245);">Todos los usuarios</h1> -->
         <h1>
-            <button>
+            <button >
                 <a href="{% url 'users:create' %}">+ Ingresar nuevo usuario </a>
             </button>
         </h1>
 
         <br>
+        <br>
 
-        <div
+        <div class="table"
             style="width: 600px; height: 250px; overflow: auto; color: white-space; background-color: rgba(0,0,0,0.6); border: 1px solid rgb(141, 242, 245); border-radius: 1rem; padding: 0 1rem;">
             <table>
                 <thead
@@ -51,30 +52,37 @@
             </table>
         </div>
 
-        <!-- <ul>
-        {% for user in user_list %}
-        <li>
-            <span>{{user.name}} {{user.lastname}}</span>
-            <span>(id: {{user.id}}) </span>
-        </li>
-        <li>email: {{user.email}} </li>
+        <div class="no-table"">
+            
+                {% for user in user_list %}
+                <div style="margin-left: 1rem;">
+                    <div>
+                        <p>(id: {{user.id}}) </p>
+                        <p>{{user.name}} {{user.lastname}}</p>
+                        <p>email: {{user.email}} </p>
+                    </div>
+                    
+                    <div>
+                        <a href="{% url 'users:update' user.id %}">
+                            <button style="height: 2.3rem; margin: 0.5rem 0.5rem 0 0;">
+                                <img src="{% static './svg/edit.svg'%}" alt="linkedin icon" height="15">
+                            </button>
+                        </a>
 
-        <a href="{% url 'users:delete' user.id %}">
-            <button style="background-color: brown;">
-                Borrar
-            </button>
-        </a>
 
-        <a href="{% url 'users:update' user.id %}">
-            <button>
-                Editar
-            </button>
-        </a>
-        <hr />
+                        <a href=" {% url 'users:delete' user.id %}">
+                            <button style="background-color: brown; height: 2.3rem; margin-right: 0.5rem;">
+                                <img src="{% static './svg/delete.svg'%}" alt="linkedin icon" height="15" width="15">
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
-        {% endfor %}
-
-    </ul> -->
+            <br>
+            {% endfor %}
+            <br>
+            
+        </div>
     </div>
 </main>
 
