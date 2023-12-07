@@ -20,6 +20,7 @@
                 <a href="{% url 'pricesHistoric' %}" class="active">Historico</a>
                 <a href="{% url 'yield' %}">Calculadora Rendimientos</a>
                 <a href="{% url 'contacto' %}">Contacto</a>
+                <a href="{% url 'users:all' %}">Usuarios</a>
             </div>
 
             <div id="icono-nav" onclick="responsiveMenu()">
@@ -66,10 +67,11 @@
                 <div class="footer-links">
                     <h4>Mapa del Sitio</h4>
                     <ul>
-                        <li><a href="../">Criptomonedas</a></li>
-                        <li><a href="../pricesHistoric.html">Histórico</a></li>
-                        <li><a href="../yield.html">Calculadora de Rendimiento</a></li>
-                        <li><a href="../contacto.html">Contacto</a></li>
+                        <li><a href="{% url 'index' %}">Criptomonedas</a></li>
+                        <li><a href="{% url 'pricesHistoric' %}">Histórico</a></li>
+                        <li><a href="{% url 'yield' %}">Calculadora de Rendimiento</a></li>
+                        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                        <li><a href="{% url 'users:all' %}">Usuarios</a></li>
                     </ul>
                 </div>
             </div>

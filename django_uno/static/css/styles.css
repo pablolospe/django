@@ -42,7 +42,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgba(251, 227, 232, 0.1);
-    padding: 1rem;
+    
+    /* padding: 1rem; */
     }
 
 .tradingview-widget-container iframe {
@@ -52,10 +53,11 @@ main {
 .price-container {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    /* gap: 0.1rem; */
     max-width: 15vw;
     min-width: 12rem;
     background-color: rgba(255, 250, 250, 0.9);
+    /* background-color:red; */
     border-color: #5cbdb9;
     border-width: 1px;
     border-style: solid;
