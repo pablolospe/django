@@ -3,15 +3,15 @@
 
 ## Descripción
 
-El proyecto es una API desarrollada en Django que utiliza la API de Binance para proporcionar información valiosa sobre las criptomonedas.
+El proyecto CRYPTOPLUS es una aplicación web completa desarrollada en Django, que interactúa con la API de Binance para proporcionar información valiosa sobre las criptomonedas. Aparte de consumir y procesar datos criptográficos, también se gestiona un frontend propio y proporciona funcionalidades de administración y gestión de usuarios a través de Django.
 
-El API CRIPTO-BINANCE ofrece las siguientes características principales:
+Las principales funcionalidades de CryptoPlus incluyen:
 
 - **Criptomonedas**: Visualización de las diferentes criptomonedas y su precio actual.
 - **Histórico**: Funcionalidad para visualizar el gráfico de crecimiento de las criptomonedas.
 - **Calculadora de Rendimiento**: Esta funcionalidad permite calcular el rendimiento de las inversiones en criptomonedas.
 - **Contacto**: Sección que incluye un formulario de contacto para recibir mensajes.
-- **Usuarios**: Esta sección muestra un CRUD para la gestión de los usuarios de la aplicación.
+- **Gestión de Usuarios**: A través del panel de Django admin, los usuarios pueden ser añadidos, editados y eliminados.
 
 
 ## Endpoints
@@ -19,8 +19,15 @@ El API CRIPTO-BINANCE ofrece las siguientes características principales:
 Las siguientes son las rutas principales proporcionadas por la API. Cada endpoint está destinado a proporcionar las funcionalidades mencionadas.
 
 ```plaintext
+/cryptocurrencies       [GET, POST]
+/cryptocurrencies/{id}  [GET, PUT, DELETE]
+/history                [GET, POST]
+/history/{id}           [GET, PUT, DELETE]
+/calculator             [POST]
+/contact                [POST]
 /users                  [GET, POST]
 /users/{id}             [GET, PUT, DELETE]
+/admin                  [GET, POST, PUT, DELETE]
 ```
 
 ## Desarrollo Local
@@ -28,16 +35,22 @@ Las siguientes son las rutas principales proporcionadas por la API. Cada endpoin
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/pablolospe/django.git
+git clone <url_de_tu_repositorio>
 ```
 
-2. Instalar las dependencias:
+2. Navegar al directorio del proyecto:
+
+```bash
+cd django_uno
+```
+
+3. Instalar las dependencias:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Crear y activar un entorno virtual:
+4. Crear y activar un entorno virtual:
 
 ```bash
 python -m venv venv
@@ -45,14 +58,14 @@ source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 ```
 
-4. Realizar las migraciones:
+5. Realizar las migraciones:
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-5. Ejecutar el servidor localmente:
+6. Ejecutar el servidor localmente:
 
 ```bash
 python manage.py runserver
@@ -69,6 +82,10 @@ python manage.py test
 ## Despliegue
 
 Las instrucciones para desplegar la API dependerán de tu proveedor de hosting. Por ejemplo, si estás utilizando Heroku, sería necesario tener instalado el CLI de Heroku y seguir los pasos para desplegar una aplicación Django.
+
+## Horas extras
+
+Si tienes alguna mejora o característica adicional que quisieras ver implementada, no dudes en contribuir al proyecto o ponte en contacto con nosotros a través de la página de contacto.
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
