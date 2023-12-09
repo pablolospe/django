@@ -32,6 +32,9 @@ ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com', '127.0.0.1', 'localhost']
 CUSTOM_APPS = [
 ]
 
+EXTERNALS = [
+    "rest_framework"
+]
 
 # Application definition
 
@@ -46,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_APPS += CUSTOM_APPS
+INSTALLED_APPS += EXTERNALS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

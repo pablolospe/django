@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path , include
-# from .router import router 
+from .router import router 
 
 
 from .views import      UsersListView   \
@@ -19,6 +19,6 @@ urlpatterns = [
     path("<int:pk>/delete/", UsersDeleteView.as_view(), name="delete")
 ]
 
-# urlpatterns += router.urls
+urlpatterns += router.urls
 
 # criptoplus---->>>
