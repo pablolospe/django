@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-wbp1jgvrer&unk(zat$*&j6i&n8diyg#ujjnq@5i5nzlhxy*sr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 CUSTOM_APPS = [
