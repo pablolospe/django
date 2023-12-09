@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-wbp1jgvrer&unk(zat$*&j6i&n8diyg#ujjnq@5i5nzlhxy*sr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['ligarcia7.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 CUSTOM_APPS = [
@@ -148,10 +148,10 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
-    BASE_DIR / "staticfiles"
+    BASE_DIR / "static"
 ]
 
-STATIC_ROOT = BASE_DIR / "static"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
