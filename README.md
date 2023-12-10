@@ -119,7 +119,7 @@ django
     ├── templates
     │   ├── base_vinoteca.html
     │   └── index.html
-    └── vinoteca
+    └── CryptoPlus
         ├── asgi.py
         ├── __init__.py
         ├── settings.py
