@@ -128,3 +128,6 @@ Este proyecto es una valiosa herramienta para cualquiera interesado en el mercad
 ![Imagen_home](./django_uno/static/images/3-Yield.png)
 ![Imagen_home](./django_uno/static/images/4-form.png)
 ![Imagen_home](./django_uno/static/images/5-UsuariosGET.png)
+![Imagen_home](./django_uno/static/images/6-UsuariosCREATE.png)
+![Imagen_home](./django_uno/static/images/7-UsuariosUpdate.png)
+![Imagen_home](./django_uno/static/images/8-UsuariosDelete.png)
