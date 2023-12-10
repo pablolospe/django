@@ -76,10 +76,45 @@ Para ejecutar las pruebas, usa el siguiente comando:
 python manage.py test
 ```
 
-## Despliegue
-
-Las instrucciones para desplegar la API dependerán de tu proveedor de hosting. Por ejemplo, si estás utilizando Heroku, sería necesario tener instalado el CLI de Heroku y seguir los pasos para desplegar una aplicación Django.
-
+## Estructura de los archivos
+```
+vinoteca
+├── app_vino
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── templates
+│   │   ├── vino_create.html
+│   │   ├── vino_delete.html
+│   │   ├── vino_detail.html
+│   │   └── vinos.html
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── static
+│   ├── css
+│   │   └── main.css
+│   ├── imgs
+│   │   ├── fire.webp
+│   │   ├── landing.webp
+│   │   └── linux.png
+│   └── js
+│       ├── main.js
+│       └── vueScript.js
+├── templates
+│   ├── base_vinoteca.html
+│   └── index.html
+└── vinoteca
+    ├── asgi.py
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    ├── views.py
+    └── wsgi.py
+```
 ## Horas extras
 
 Si tienes alguna mejora o característica adicional que quisieras ver implementada, no dudes en contribuir al proyecto o ponte en contacto con nosotros a través de la página de contacto.
