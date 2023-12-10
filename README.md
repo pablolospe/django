@@ -20,15 +20,8 @@ Las principales funcionalidades de CryptoPlus incluyen:
 Las siguientes son las rutas principales proporcionadas por la API. Cada endpoint está destinado a proporcionar las funcionalidades mencionadas.
 
 ```plaintext
-/cryptocurrencies       [GET, POST]
-/cryptocurrencies/{id}  [GET, PUT, DELETE]
-/history                [GET, POST]
-/history/{id}           [GET, PUT, DELETE]
-/calculator             [POST]
-/contact                [POST]
 /users                  [GET, POST]
 /users/{id}             [GET, PUT, DELETE]
-/admin                  [GET, POST, PUT, DELETE]
 ```
 
 ## Desarrollo Local
