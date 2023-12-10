@@ -119,3 +119,12 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 Este proyecto es una valiosa herramienta para cualquiera interesado en el mercado de criptomonedas, ya sea un inversor experimentado o alguien que está comenzando. ¡Explora las características, realiza un seguimiento de tus inversiones y mantente en contacto con nosotros!
 
 ¡Gracias por usar nuestro servicio de criptomonedas!
+
+# Django
+
+## Views
+
+![Imagen_home](./django_uno/static/images/2-Historico.png)
+![Imagen_home](./django_uno/static/images/3-Yield.png)
+![Imagen_home](./django_uno/static/images/4-form.png)
+![Imagen_home](./django_uno/static/images/5-UsuariosGET.png)
