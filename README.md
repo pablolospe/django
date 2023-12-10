@@ -12,7 +12,7 @@ Las principales funcionalidades de CryptoPlus incluyen:
 - **Histórico**: Funcionalidad para visualizar el gráfico de crecimiento de las criptomonedas.
 - **Calculadora de Rendimiento**: Esta funcionalidad permite calcular el rendimiento de las inversiones en criptomonedas.
 - **Contacto**: Sección que incluye un formulario de contacto para recibir mensajes.
-- **Gestión de Usuarios**: A través del panel de Django admin, los usuarios pueden ser añadidos, editados y eliminados.
+- **Gestión de Usuarios**: A través de la pestaña Usuarios o del panel de administración de Django, CryptoPlus ofrece la capacidad de añadir, editar y eliminar usuarios de manera eficiente.
 
 
 ## Endpoints
