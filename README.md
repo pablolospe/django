@@ -47,9 +47,9 @@ pip install -r requirements.txt
 4. Crear y activar un entorno virtual:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
 ```
 
 5. Realizar las migraciones:
@@ -63,14 +63,6 @@ python manage.py migrate
 
 ```bash
 python manage.py runserver
-```
-
-## Pruebas
-
-Para ejecutar las pruebas, usa el siguiente comando:
-
-```bash
-python manage.py test
 ```
 
 ## Estructura de los archivos
