@@ -59,7 +59,13 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-6. Ejecutar el servidor localmente:
+6. Establecer el entorno de trabajo como local:
+
+```bash
+export DEVELOPMENT=1
+```
+
+7. Ejecutar el servidor localmente:
 
 ```bash
 python manage.py runserver
