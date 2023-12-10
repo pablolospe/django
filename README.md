@@ -22,6 +22,9 @@ Las siguientes son las rutas principales proporcionadas por la API. Cada endpoin
 ```plaintext
 https://ligarcia7.pythonanywhere.com/user/api-user/                 [GET, POST]
 https://ligarcia7.pythonanywhere.com/user/api-user/{id}             [GET, PUT, DELETE]
+
+/user/api-user/                 [GET, POST]
+/user/api-user/{id}             [GET, PUT, DELETE]
 ```
 
 ## Desarrollo Local
@@ -121,6 +124,18 @@ Este proyecto es una valiosa herramienta para cualquiera interesado en el mercad
 ¡Gracias por usar nuestro servicio de criptomonedas!
 
 # Django
+
+## Despliegue en PythonAnywhere
+
+Este proyecto ya ha sido desplegado en PythonAnywhere, que es una plataforma de alojamiento en la nube popular para aplicaciones web Python.
+
+Puedes acceder a la aplicación en funcionamiento en [http://ligarcia7.pythonanywhere.com](http://ligarcia7.pythonanywhere.com). Aquí puedes interactuar con todas las funcionalidades en un entorno de producción.
+
+El despliegue en PythonAnywhere asegura que la aplicación esté disponible 24/7, con un rendimiento fiable y rápido.
+
+Fue usado "Manual Configuration" (Configuración manual) en PythonAnywhere para asegurar un control total sobre cómo se ejecuta la aplicación, y se realizó una serie de ajustes importantes para adaptar la configuración a un entorno de producción. Esto incluye la configuración de archivos estáticos para permitir a la aplicación servir sus propios archivos estáticos.
+
+Para cualquier problemática relacionada con el despliegue en PythonAnywhere, no dudes en abrir un issue en este repositorio o contactarme directamente.
 
 ## Views
 
