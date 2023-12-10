@@ -129,7 +129,12 @@ Este proyecto es una valiosa herramienta para cualquiera interesado en el mercad
 
 Este proyecto ya ha sido desplegado en PythonAnywhere, que es una plataforma de alojamiento en la nube popular para aplicaciones web Python.
 
-Puedes acceder a la aplicación en funcionamiento en [http://ligarcia7.pythonanywhere.com](http://ligarcia7.pythonanywhere.com). Aquí puedes interactuar con todas las funcionalidades en un entorno de producción.
+Puedes acceder a la aplicación en funcionamiento en [http://ligarcia7.pythonanywhere.com](http://ligarcia7.pythonanywhere.com). Aquí puedes interactuar con todas las funcionalidades en un entorno de producción. Además nos brinda los endpoints de la API.
+
+```plaintext
+https://ligarcia7.pythonanywhere.com/user/api-user/                 [GET, POST]
+https://ligarcia7.pythonanywhere.com/user/api-user/{id}             [GET, PUT, DELETE]
+```
 
 El despliegue en PythonAnywhere asegura que la aplicación esté disponible 24/7, con un rendimiento fiable y rápido.
 
