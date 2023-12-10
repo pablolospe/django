@@ -127,12 +127,6 @@ django
         ├── views.py
         └── wsgi.py
 ```
-## Horas extras
-
-Si tienes alguna mejora o característica adicional que quisieras ver implementada, no dudes en contribuir al proyecto o ponte en contacto con nosotros a través de la página de contacto.
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # Frontend
 
