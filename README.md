@@ -88,13 +88,14 @@ django
     │   ├── apps.py
     │   ├── __init__.py
     │   ├── migrations
+    │   │   ├── 0001_initial.py
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── templates
-    │   │   ├── vino_create.html
-    │   │   ├── vino_delete.html
-    │   │   ├── vino_detail.html
-    │   │   └── vinos.html
+    │   │   ├── user_create.html
+    │   │   ├── user_delete.html
+    │   │   ├── user_detail.html
+    │   │   └── user.html
     │   ├── urls.py
     │   └── views.py
     ├── manage.py
