@@ -101,7 +101,13 @@ django
     ├── manage.py
     ├── static
     │   ├── css
-    │   │   └── main.css
+    │   │   ├── button.style.css
+    │   │   ├── footer.style.css
+    │   │   ├── form.style.css
+    │   │   ├── header.style.css
+    │   │   ├── pricesHisstoric.style.css
+    │   │   ├── yield.style.css
+    │   │   └── styles.css
     │   ├── imgs
     │   │   ├── fire.webp
     │   │   ├── landing.webp
