@@ -20,8 +20,8 @@ Las principales funcionalidades de CryptoPlus incluyen:
 Las siguientes son las rutas principales proporcionadas por la API. Cada endpoint está destinado a proporcionar las funcionalidades mencionadas.
 
 ```plaintext
-/users                  [GET, POST]
-/users/{id}             [GET, PUT, DELETE]
+https://ligarcia7.pythonanywhere.com/user/api-user/                 [GET, POST]
+https://ligarcia7.pythonanywhere.com/user/api-user/{id}             [GET, PUT, DELETE]
 ```
 
 ## Desarrollo Local
@@ -84,17 +84,7 @@ Si tienes alguna mejora o característica adicional que quisieras ver implementa
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-# CryptoPlus
-
-## Descripción
-
-Este proyecto es una API conectada a la plataforma de Binance (api.binance.com) que proporciona información valiosa sobre criptomonedas. Ofrece una experiencia completa en el mundo de las criptomonedas con cuatro solapas principales:
-
-- **Criptomonedas**: Se visualizan las criptomonedas y su precio actual.
-- **Histórico**: Muestra el gráfico de crecimiento de las criptomonedas.
-- **Calculadora de Rendimiento**: Permite calcular el rendimiento de tus inversiones en criptomonedas.
-- **Contacto**: Incluye un formulario de contacto.
-- **Usuarios**: Muestra un CRUD de los usuarios de la app.
+# Frontend
 
 ## Características
 
