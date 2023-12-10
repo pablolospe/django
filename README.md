@@ -90,7 +90,7 @@ Si tienes alguna mejora o característica adicional que quisieras ver implementa
 
 ### 1. Criptomonedas
 
-En la solapa "Criptomonedas", los usuarios pueden explorar una lista de criptomonedas populares junto con su precio actual en tiempo real. Esta función permite a los inversores y entusiastas de las criptomonedas estar al tanto de las últimas tasas de cambio.
+En la solapa "Criptomonedas", los usuarios pueden explorar una lista de criptomonedas populares junto con su precio actual en tiempo real. Esta función permite a los inversores y entusiastas de las criptomonedas estar al tanto de las últimas tasas de cambio. Clickeando los íconos, animados a traves de la función hover, somos redireccionados a la página de cada criptomoneda.
 
 ### 2. Histórico
 
@@ -103,10 +103,6 @@ La "Calculadora de Rendimiento" es una herramienta poderosa que permite a los us
 ### 4. Contacto
 
 La solapa "Contacto" proporciona un formulario de contacto que permite a los usuarios ponerse en contacto con nosotros para hacer preguntas, dar retroalimentación o solicitar asistencia.
-
-## Uso
-
-Indica cómo los usuarios pueden utilizar tu API y acceder a estas características. Proporciona ejemplos de código si es necesario.
 
 ## Contribución
 
