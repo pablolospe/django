@@ -20,9 +20,6 @@ Las principales funcionalidades de CryptoPlus incluyen:
 Las siguientes son las rutas principales proporcionadas por la API. Cada endpoint está destinado a proporcionar las funcionalidades mencionadas.
 
 ```plaintext
-https://ligarcia7.pythonanywhere.com/user/api-user/                 [GET, POST]
-https://ligarcia7.pythonanywhere.com/user/api-user/{id}             [GET, PUT, DELETE]
-
 /user/api-user/                 [GET, POST]
 /user/api-user/{id}             [GET, PUT, DELETE]
 ```
