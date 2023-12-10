@@ -1,6 +1,6 @@
 # Proyecto Django: CRYPTOPLUS
   
-  ![](../django/django_uno/static/images/1-home-b.png)
+  ![Imagen_home](../django_uno/static/images/1-home-b.png)
 
 ## Descripción
 
