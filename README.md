@@ -29,7 +29,7 @@ Las siguientes son las rutas principales proporcionadas por la API. Cada endpoin
 1. Clonar el repositorio:
 
 ```bash
-git clone <url_de_tu_repositorio>
+git clone https://github.com/pablolospe/django.git
 ```
 
 2. Navegar al directorio del proyecto:
