@@ -108,13 +108,14 @@ django
     │   │   ├── pricesHisstoric.style.css
     │   │   ├── yield.style.css
     │   │   └── styles.css
-    │   ├── imgs
-    │   │   ├── fire.webp
-    │   │   ├── landing.webp
-    │   │   └── linux.png
+    │   ├── images
+    │   │   ├── crypto-background.webp
+    │   │   └── favicon.png
     │   └── js
-    │       ├── main.js
-    │       └── vueScript.js
+    │       ├── actions.js
+    │       ├── form.js
+    │       ├── responsive.js
+    │       └── yield.js
     ├── templates
     │   ├── base_vinoteca.html
     │   └── index.html
