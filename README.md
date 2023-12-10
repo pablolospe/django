@@ -78,42 +78,46 @@ python manage.py test
 
 ## Estructura de los archivos
 ```
-vinoteca
-├── app_vino
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
-│   ├── migrations
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── templates
-│   │   ├── vino_create.html
-│   │   ├── vino_delete.html
-│   │   ├── vino_detail.html
-│   │   └── vinos.html
-│   ├── urls.py
-│   └── views.py
-├── manage.py
-├── static
-│   ├── css
-│   │   └── main.css
-│   ├── imgs
-│   │   ├── fire.webp
-│   │   ├── landing.webp
-│   │   └── linux.png
-│   └── js
-│       ├── main.js
-│       └── vueScript.js
-├── templates
-│   ├── base_vinoteca.html
-│   └── index.html
-└── vinoteca
-    ├── asgi.py
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    ├── views.py
-    └── wsgi.py
+django
+├── README.md
+├── .vscode
+|   └── settings.json
+└── django_uno
+    ├── users
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── templates
+    │   │   ├── vino_create.html
+    │   │   ├── vino_delete.html
+    │   │   ├── vino_detail.html
+    │   │   └── vinos.html
+    │   ├── urls.py
+    │   └── views.py
+    ├── manage.py
+    ├── static
+    │   ├── css
+    │   │   └── main.css
+    │   ├── imgs
+    │   │   ├── fire.webp
+    │   │   ├── landing.webp
+    │   │   └── linux.png
+    │   └── js
+    │       ├── main.js
+    │       └── vueScript.js
+    ├── templates
+    │   ├── base_vinoteca.html
+    │   └── index.html
+    └── vinoteca
+        ├── asgi.py
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        ├── views.py
+        └── wsgi.py
 ```
 ## Horas extras
 
