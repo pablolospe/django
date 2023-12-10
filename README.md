@@ -81,7 +81,7 @@ python manage.py test
 django
 ├── README.md
 ├── .vscode
-|   └── settings.json
+│   └── settings.json
 └── django_uno
     ├── users
     │   ├── admin.py
