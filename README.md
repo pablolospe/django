@@ -149,8 +149,10 @@ La sección "Usuarios" proporciona una interfaz eficaz para gestionar los datos 
 
 Cada usuario en la lista tiene asociados dos botones de acción:
 
-Modificar: Te permite editar los detalles del usuario seleccionado.
-Borrar: Te proporciona una opción para eliminar el perfil del usuario.
+- **Modificar**: Te permite editar los detalles del usuario seleccionado.
+
+- **Borrar**: Te proporciona una opción para eliminar el perfil del usuario.
+
 Además, en la parte superior de la tabla, hay un botón "Crear" que puedes usar para agregar un nuevo usuario a la lista.
 
 Esta configuración de CRUD (Crear, Leer, Actualizar, Eliminar) hace que la administración de los perfiles de los usuarios sea una tarea rápida y sencilla.
