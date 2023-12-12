@@ -38,18 +38,18 @@ git clone https://github.com/pablolospe/django.git
 cd django_uno
 ```
 
-3. Instalar las dependencias:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Crear y activar un entorno virtual:
+3. Crear y activar un entorno virtual:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
+```
+
+4. Instalar las dependencias:
+
+```bash
+pip install -r requirements.txt
 ```
 
 5. Realizar las migraciones:
