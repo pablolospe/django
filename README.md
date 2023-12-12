@@ -10,7 +10,7 @@ Las principales funcionalidades de CryptoPlus incluyen:
 
 - **Criptomonedas**: Visualización de las diferentes criptomonedas y su precio actual.
 - **Histórico**: Funcionalidad para visualizar el gráfico de crecimiento de las criptomonedas.
-- **Calculadora de Rendimiento**: Esta funcionalidad permite calcular el rendimiento de las inversiones en criptomonedas.
+- **Calculadora de Rendimiento**: Permite calcular el rendimiento de las inversiones en criptomonedas.
 - **Contacto**: Sección que incluye un formulario de contacto para recibir mensajes.
 - **Gestión de Usuarios**: A través de la pestaña Usuarios o del panel de administración de Django, CryptoPlus ofrece la capacidad de añadir, editar y eliminar usuarios de manera eficiente.
 
@@ -143,6 +143,18 @@ La "Calculadora de Rendimiento" es una herramienta poderosa que permite a los us
 
 La solapa "Contacto" proporciona un formulario de contacto que permite a los usuarios ponerse en contacto con nosotros para hacer preguntas, dar retroalimentación o solicitar asistencia.
 
+### 5. Usuarios
+
+La sección "Usuarios" proporciona una interfaz eficaz para gestionar los datos de los usuarios de la aplicación. Al hacer clic en la pestaña "Usuarios", accederás a una tabla que muestra una lista completa de usuarios. Puedes desplazarte por la tabla para ver todos los usuarios.
+
+Cada usuario en la lista tiene asociados dos botones de acción:
+
+Modificar: Te permite editar los detalles del usuario seleccionado.
+Borrar: Te proporciona una opción para eliminar el perfil del usuario.
+Además, en la parte superior de la tabla, hay un botón "Crear" que puedes usar para agregar un nuevo usuario a la lista.
+
+Esta configuración de CRUD (Crear, Leer, Actualizar, Eliminar) hace que la administración de los perfiles de los usuarios sea una tarea rápida y sencilla.
+
 ## Contribución
 
 Si deseas contribuir a este proyecto, por favor sigue estos pasos:
@@ -160,6 +172,29 @@ Este proyecto es una valiosa herramienta para cualquiera interesado en el mercad
 ¡Gracias por usar nuestro servicio de criptomonedas!
 
 # Django
+
+## Funcionalidades de /admin
+
+El panel de administración de Django, o /admin, es una herramienta poderosa que permite a los administradores de la aplicación gestionar los datos de la aplicación. Cuando creas una aplicación de Django, Django genera automáticamente un panel de administración para tu aplicación.
+
+El panel de administración incluye funcionalidades para:
+
+Crear, editar y eliminar objetos.
+Ver el historial de cambios de los objetos.
+Buscar objetos.
+Filtrar objetos.
+Exportar objetos a un archivo.
+Para acceder al panel de administración, debes iniciar sesión con una cuenta de administrador. Las cuentas de administrador se crean automáticamente cuando creas una aplicación de Django.
+
+## Personalizar /admin
+Puedes personalizar el panel de administración para adaptarlo a tus necesidades. Por ejemplo, puedes:
+
+Añadir o eliminar campos de los formularios de edición.
+Cambiar los nombres de los campos.
+Añadir o eliminar menús.
+Para personalizar /admin, debes editar los archivos de plantillas de /admin.
+
+
 
 ## Despliegue en PythonAnywhere
 
